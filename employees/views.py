@@ -1,4 +1,5 @@
-from rest_framework import viewsets, generics
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import viewsets, generics, filters
 from .serializers import *
 from .models import Employee
 
@@ -7,6 +8,10 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     http_method_names = ['get', 'delete']
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
+    ordering_fields = ['name']
+    ordering = ['name']
+    search_fields = ['name', 'email']
 
 class CreateEmployeeApiView(generics.CreateAPIView):
     """Create a New Employee"""
