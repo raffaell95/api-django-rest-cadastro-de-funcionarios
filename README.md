@@ -97,7 +97,7 @@ Response:
     ]
 
 
-use https://api-igs.herokuapp.com/employees/id para listar apenas um funcionario
+use https://api-igs.herokuapp.com/employees/id para listar apenas um funcionário
 
 ## Criando funcionário
 
@@ -137,8 +137,9 @@ request:
 
 Listando departamentos
 https://api-igs.herokuapp.com/departments/
-metodo: get
-    para listar apenas um departamento https://api-igs.herokuapp.com/departments/id
+metodo: GET
+
+para listar apenas um departamento https://api-igs.herokuapp.com/departments/id
 
 Adicionando novo departamento
 https://api-igs.herokuapp.com/departments/
