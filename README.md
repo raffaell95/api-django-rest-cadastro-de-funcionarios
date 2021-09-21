@@ -6,7 +6,7 @@
 windows: `.\venv\Scripts\activate`
 linux: : `source venv/bin/activate`
 
-`pip install -r requeriments.txt`
+`pip install -r requirements.txt`
 
 `python manage.py migrate`
 
