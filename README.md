@@ -41,7 +41,7 @@ usuario de demostração:
 
 A api utiliza a lib JWT para autenticar alguns recursos
 - listar, remover e atualizar departamentos
-- criar, remover e atualizar funcionario
+- criar, remover e atualizar funcionário
 
 ## gerando token de acesso
 
