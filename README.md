@@ -1,9 +1,11 @@
 # API para cadastrar e listar funcionarios
 
 ## Instruções para instalação local
+
 `python -m venv venv`
 
 windows: `.\venv\Scripts\activate`
+
 linux: : `source venv/bin/activate`
 
 `pip install -r requirements.txt`
@@ -17,6 +19,7 @@ linux: : `source venv/bin/activate`
 ## Demonstração
 
 Deploy realizado na plataforma Heroku
+
 repositorio git: https://github.com/raffaell95/api-django-rest-processo-seletivo.git
 
 `https://api-igs.herokuapp.com/`
