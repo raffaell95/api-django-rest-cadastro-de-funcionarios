@@ -137,12 +137,14 @@ request:
 
 Listando departamentos
 https://api-igs.herokuapp.com/departments/
+
 metodo: GET
 
 para listar apenas um departamento https://api-igs.herokuapp.com/departments/id
 
 Adicionando novo departamento
 https://api-igs.herokuapp.com/departments/
+
 metodo: POST
 
 request:
