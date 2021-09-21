@@ -1,4 +1,4 @@
-# API para cadastrar e listar funcionarios
+# API para cadastrar e listar funcionários
 
 ## Instruções para instalação local
 
