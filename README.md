@@ -136,16 +136,12 @@ request:
     Autenticação: sim
 
 Listando departamentos
-https://api-igs.herokuapp.com/departments/
-
-metodo: GET
+metodo: GET https://api-igs.herokuapp.com/departments/
 
 para listar apenas um departamento https://api-igs.herokuapp.com/departments/id
 
 Adicionando novo departamento
-https://api-igs.herokuapp.com/departments/
-
-metodo: POST
+metodo: POST https://api-igs.herokuapp.com/departments/
 
 request:
 
@@ -153,16 +149,16 @@ request:
 
 
 Atualiando  departamento
-https://api-igs.herokuapp.com/departments/idid_funcionario
-metodo: PUT, PATCH
+metodo: PUT, PATCH https://api-igs.herokuapp.com/departments/idid_funcionario
+
 request:
 
     "name": "TI"
 
 
 Removendo  departamento
-https://api-igs.herokuapp.com/departments/id_funcionario
-metodo: DELETE
+metodo: DELETE https://api-igs.herokuapp.com/departments/id_funcionario
+
 
 
 
