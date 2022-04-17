@@ -26,7 +26,7 @@ SECRET_KEY = '3nq+_=y3o2kjscml@$=j0hynfvu38emm8h95+jmaz-!)lb$4pl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'departments',
     'employees',
     'rest_framework_simplejwt'
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -133,3 +135,5 @@ REST_FRAMEWORK = {
 }
 
 django_heroku.settings(locals())
+
+CORS_ALLOW_ALL_ORIGINS = True
